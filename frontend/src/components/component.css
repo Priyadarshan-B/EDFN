@@ -1,0 +1,214 @@
+.total-side-bar {
+    height: 100%;
+}
+
+.student-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.page-icons-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.side-profile {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-bottom: 0px;    
+}
+
+.photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+    padding: 10px 0px;
+    flex: 1;
+    border-radius: 5px;
+}
+
+.joImg {
+    height: 300px;
+    border-radius: 5px;
+}
+
+.joImgs{
+    height: 200px;
+    border-radius: 5px;
+}
+
+.info {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 96%;
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        transform: translateX(-5px);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+        transform: translateX(5px);
+    }
+}
+
+@keyframes shine {
+    0% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.5;
+    }
+}
+
+.drawer {
+    background-color: #252734;
+    width: 90%;
+    height: 90%;
+    flex: 2;
+    border-radius: 20px 20px 0px 0px;
+    border: 10px solid #191b23;
+    bottom: 0;
+    position: absolute;
+}
+
+.profile-icons {
+    background-color: var(--icons-bg);
+    padding: 5px 7px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.download-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.pdf-view {
+    height: 93%;
+}
+
+.button {
+    background-color: var(--icons-bg);
+    color: var(--icons);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+
+.github-explore-button {
+    position: relative;
+    background-color: var(--icons-bg);
+    color: var(--icons);
+    font-weight: 600;
+    padding: 10px 20px;
+    width: 80%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    cursor: pointer;
+
+}
+
+.github-explore-button::after {
+    content: "EXPLORE GITHUB REPOSITORIES";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+    background-color: inherit;
+    border-radius: 5px;
+}
+
+.github-explore-button:hover::after {
+    opacity: 1;
+}
+
+.github-explore-button:hover {
+    color: var(--icons);
+}
+
+
+
+.total-top-nav {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #a7a7a7;
+}
+
+.name-container{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
