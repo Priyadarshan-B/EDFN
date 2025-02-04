@@ -9,8 +9,9 @@ function App() {
 
   return (
     <>
-      <TopNav/>
+      <TopNav />
       EDFN TECHNOLOGIES
+      <h1 className='text-lg text-green-600 '>skjdnhg</h1>
     </>
   )
 }
