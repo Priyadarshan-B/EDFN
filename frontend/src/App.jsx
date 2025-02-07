@@ -3,16 +3,16 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import TopNav from './components/TopNav'
+import Welcome from './pages/Welcome'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div className='text-black'>
       <TopNav />
-      EDFN TECHNOLOGIES
-      <h1 className='text-lg text-green-600 '>skjdnhg</h1>
-    </>
+      <Welcome />
+    </div>
   )
 }
 
