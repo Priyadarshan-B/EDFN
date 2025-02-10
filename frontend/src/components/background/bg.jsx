@@ -1,4 +1,3 @@
-// src/components/Background.jsx
 import React, { useEffect, useRef } from "react";
 
 const Background = () => {

@@ -13,11 +13,12 @@ function App() {
 
   return (
     <div className='text-black'>
+      {/* <div class="loader"></div> */}
       <Background/>
       <TopNav />
       <div
             id="home"
-            className="section pt-20  flex items-center justify-center"
+            className="section pt-32  flex items-center justify-center"
           >
             <Home />
           </div>
