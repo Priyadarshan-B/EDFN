@@ -29,11 +29,11 @@ function TopNav() {
   };
 
   return (
-    <nav className="fixed w-full top-0 left-0 z-50 shadow-md bg-[#30323a] backdrop-blur-sm">
+    <nav className="fixed w-full top-0 left-0 z-50 shadow-md bg-[#1f2029] backdrop-blur-sm text-white"> {/* Dark mode background and text color */}
       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
         <div className="border-l-4 border-blue-500 rounded px-2">
           <h3 className="font-bold" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="10">EDFN Technologies</h3>
-          <p className="text-sm text-gray-500 font-bold" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="10">Innovation in you</p>
+          <p className="text-sm text-gray-400 font-bold" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="10">Innovation in you</p> {/* Slightly lighter gray for subtext */}
         </div>
 
         <div className="hidden md:flex gap-7 items-center">
@@ -41,8 +41,8 @@ function TopNav() {
             <button
               key={item.id}
               className={`flex items-center gap-1 px-3 py-1 transition font-bold ${active === item.id
-                ? "text-bold text-blue-500 inline-block border-b-2 border-blue-500"
-                : "text-black-600 hover:text-blue-500"
+                ? "text-blue-500 inline-block border-b-2 border-blue-500" // Active state color
+                : "text-gray-300 hover:text-blue-500" // Inactive state color, hover color
                 }`}
               onClick={() => handleScrollToSection(item.id)}
             >
@@ -52,25 +52,25 @@ function TopNav() {
         </div>
 
         <button
-          className="md:hidden text-blue-600"
+          className="md:hidden text-gray-300 hover:text-blue-500" // Mobile menu button color
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         >
           {isMobileMenuOpen ? <CloseIcon /> : <MenuIcon />}
         </button>
       </div>
 
-      <div className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'} bg-white/95 backdrop-blur-sm`}>
+      <div className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'} bg-[#1f2029] backdrop-blur-sm`}> {/* Dark mode background for mobile menu */}
         <div className="px-4 py-2 flex flex-col">
           {navItems.map((item) => (
             <button
               key={item.id}
               className={`flex items-center gap-3 px-3 py-3 text-sm font-bold ${active === item.id
-                ? "text-blue-500 bg-blue-50 rounded-lg"
-                : "text-gray-600 hover:text-blue-500"
+                ? "text-blue-500 bg-blue-900/50 rounded-lg" // Active state with slightly darker background
+                : "text-gray-300 hover:text-blue-500" // Inactive state, hover color
                 }`}
               onClick={() => handleScrollToSection(item.id)}
             >
-              <span className="text-blue-600">{item.icon}</span>
+              <span className="text-blue-500">{item.icon}</span> {/* Icon color */}
               {item.label}
             </button>
           ))}
