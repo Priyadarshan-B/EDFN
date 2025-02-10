@@ -15,37 +15,37 @@ function App() {
       <TopNav />
       <div
             id="home"
-            className="section pt-32 h-screen flex items-center justify-center"
+            className="section pt-32 h-screen flex items-center justify-center bg-[#12181D] "
           >
             <Home />
           </div>
           <div
             id="about"
-            className="section pt-32 h-screen flex items-center justify-center"
+            className="section pt-32 h-screen flex items-center justify-center bg-[#12181D]"
           >
             <About />
           </div>
            <div
             id="services"
-            className="section pt-32 h-screen flex items-center justify-center"
+            className="section pt-32 h-screen flex items-center justify-center bg-[#12181D]"
           >
             <Services />
           </div> 
           <div
             id="process"
-            className="section pt-32 h-screen flex items-center justify-center"
+            className="section pt-32 h-screen flex items-center justify-center bg-[#12181D]"
           >
             <Process />
           </div>
            <div
             id="mission"
-            className="section pt-32 h-screen flex items-center justify-center"
+            className="section pt-32 h-screen flex items-center justify-center bg-[#12181D]"
           >
             <Mission />
           </div>
           <div
             id="contact"
-            className="section pt-32 h-screen flex items-center justify-center"
+            className="section pt-32 h-screen flex items-center justify-center bg-[#12181D]"
           >
             <Contact />
           </div>
