@@ -4,6 +4,7 @@ import BuildIcon from '@mui/icons-material/Build';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import PeopleIcon from '@mui/icons-material/People';
 import { useState, useEffect } from "react";
+import mission from '../../assets/mission.gif';
 import { motion } from "framer-motion";
 
 const works = [
@@ -32,7 +33,7 @@ function Home() {
 
 
     return (
-        <div className='min-h-[91.42vh] items-center flex justify-center flex-col gap-28'>
+        <div className='h-full items-center flex justify-center flex-col gap-28'>
             <div className='items-center flex-col justify-center'>
                 <div className='text-5xl p-4 font-bold mb-10' style={{ fontFamily: "'Electrolize', sans-serif" }} data-aos="fade-down" data-aos-duration="1000" data-aos-delay="10">
                     Welcome to EDFN Technologies

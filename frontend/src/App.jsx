@@ -7,11 +7,13 @@ import Contact from './pages/contact/contact'
 import Mission from './pages/mission/mission'
 import Process from './pages/process/process'
 import Services from './pages/services/services'
+import Background from './components/background/bg'
 
 function App() {
 
   return (
     <div className='text-black'>
+      <Background/>
       <TopNav />
       <div
             id="home"
@@ -21,31 +23,31 @@ function App() {
           </div>
           <div
             id="about"
-            className="section pt-32 h-screen flex items-center justify-center bg-[#12181D]"
+            className="section pt-32 h-screen flex items-center justify-center "
           >
             <About />
           </div>
            <div
             id="services"
-            className="section pt-32 h-screen flex items-center justify-center bg-[#12181D]"
+            className="section pt-32 h-screen flex items-center justify-center "
           >
             <Services />
           </div> 
           <div
             id="process"
-            className="section pt-32 h-screen flex items-center justify-center bg-[#12181D]"
+            className="section pt-32 h-screen flex items-center justify-center "
           >
             <Process />
           </div>
            <div
             id="mission"
-            className="section pt-32 h-screen flex items-center justify-center bg-[#12181D]"
+            className="section pt-32 h-screen flex items-center justify-center "
           >
             <Mission />
           </div>
           <div
             id="contact"
-            className="section pt-32 h-screen flex items-center justify-center bg-[#12181D]"
+            className="section pt-32 h-screen flex items-center justify-center "
           >
             <Contact />
           </div>
