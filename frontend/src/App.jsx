@@ -17,13 +17,13 @@ function App() {
       <TopNav />
       <div
             id="home"
-            className="section pt-20 h-screen flex items-center justify-center"
+            className="section pt-20  flex items-center justify-center"
           >
             <Home />
           </div>
           <div
             id="about"
-            className="section flex items-center justify-center "
+            className="section flex  items-center justify-center "
           >
             <About />
           </div>

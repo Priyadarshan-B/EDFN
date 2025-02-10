@@ -30,11 +30,9 @@ function Home() {
 
   return (
     <div className="h-full flex flex-col items-center justify-center gap-10">
-      {/* Top Section */}
-      <div className="flex flex-col items-center justify-center bg-gray-800/70 backdrop-blur-sm px-8 sm:px-20 py-10 rounded-tl-[40px] rounded-br-[40px]">
+      <div className="flex flex-col items-center justify-center bg-gray-800/70 backdrop-blur-sm m-3 px-8 sm:px-20 py-10 rounded-3xl ">
         <div
-          className="text-4xl sm:text-5xl p-4 font-bold mb-10"
-          style={{ fontFamily: "'Electrolize', sans-serif" }}
+          className="text-4xl md:text-3xl p-4 font-bold"
           data-aos="fade-down"
           data-aos-duration="1000"
           data-aos-delay="10"
@@ -55,7 +53,7 @@ function Home() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.5 }}
-            className="text-blue-500 font-bold text-base sm:text-[20px]"
+            className="text-purple-600 font-bold text-base sm:text-[20px]"
           >
             {works[index]}
           </motion.span>
