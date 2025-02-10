@@ -47,7 +47,7 @@ function App() {
           </div>
           <div
             id="contact"
-            className="section   "
+            className="section"
           >
             <Contact />
           </div>
