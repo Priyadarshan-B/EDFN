@@ -48,7 +48,7 @@ const Background = () => {
       };
     }
 
-    const speed = 3;
+    const speed = 2;
     const period = 1000; 
 
     const pulse = () => {
