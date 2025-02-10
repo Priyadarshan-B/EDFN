@@ -6,7 +6,6 @@ import PeopleIcon from '@mui/icons-material/People';
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
-
 const works = [
     "PCB Design",
     "MECHANICAL DESIGN",
@@ -19,14 +18,14 @@ const works = [
     "EDA CONVERSATION",
 ];
 
-function Welcome() {
+function Home() {
 
     const [index, setIndex] = useState(0);
 
     useEffect(() => {
         const interval = setInterval(() => {
             setIndex((prevIndex) => (prevIndex + 1) % works.length);
-        }, 2000); // Change every 2 seconds
+        }, 2000); 
 
         return () => clearInterval(interval);
     }, []);
@@ -84,4 +83,4 @@ function Welcome() {
     )
 }
 
-export default Welcome
+export default Home

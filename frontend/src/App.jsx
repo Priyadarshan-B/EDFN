@@ -1,17 +1,54 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import TopNav from './components/TopNav'
-import Welcome from './pages/Welcome'
+import Home from './pages/home/home'
+import About from './pages/about/about'
+import Contact from './pages/contact/contact' 
+import Mission from './pages/mission/mission'
+import Process from './pages/process/process'
+import Services from './pages/services/services'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div className='text-black'>
       <TopNav />
-      <Welcome />
+      <div
+            id="home"
+            className="section pt-32 h-screen flex items-center justify-center"
+          >
+            <Home />
+          </div>
+          <div
+            id="about"
+            className="section pt-32 h-screen flex items-center justify-center"
+          >
+            <About />
+          </div>
+           <div
+            id="services"
+            className="section pt-32 h-screen flex items-center justify-center"
+          >
+            <Services />
+          </div> 
+          <div
+            id="process"
+            className="section pt-32 h-screen flex items-center justify-center"
+          >
+            <Process />
+          </div>
+           <div
+            id="mission"
+            className="section pt-32 h-screen flex items-center justify-center"
+          >
+            <Mission />
+          </div>
+          <div
+            id="contact"
+            className="section pt-32 h-screen flex items-center justify-center"
+          >
+            <Contact />
+          </div>
     </div>
   )
 }
