@@ -18,9 +18,9 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    const serviceId = "service_0pa5y0d"; 
-    const templateId = "template_l33mqv9"; 
-    const userId = "Ex1HaTpAQYDoXjFDp";     
+    const serviceId = "service_0pa5y0d";
+    const templateId = "template_l33mqv9";
+    const userId = "Ex1HaTpAQYDoXjFDp";
 
     emailjs
       .sendForm(serviceId, templateId, e.target, userId)
@@ -33,7 +33,7 @@ const Contact = () => {
         e.target.reset();
       })
       .catch((error) => {
-        console.error("EmailJS Error:", error); 
+        console.error("EmailJS Error:", error);
         Swal.fire({
           icon: "error",
           title: "Oops...",
@@ -43,12 +43,15 @@ const Contact = () => {
       .finally(() => setLoading(false));
   };
   return (
-    <div className=" w-full bg-gray-900/50 backdrop-blur-sm rounded-lg py-12 px-4 sm:px-6 lg:px-8 text-white">
-      <div className="max-w-7xl mx-auto flex flex-col gap-12">
-        <div className="flex flex-col lg:flex-row gap-8">
-          <div className="w-full lg:w-1/3 flex flex-col gap-6">
+    <div className=" w-full rounded-lg py-12 px-4 sm:px-6 lg:px-8 text-white">
+      <h2 className="text-3xl font-bold text-center text-gray-100 mb-8" data-aos="zoom-in">
+        Contact Us
+      </h2>
+      <div className="max-w-7xl mx-auto flex flex-col gap-10">
+        <div className="flex flex-col lg:flex-row gap-5">
+          <div className="w-full lg:w-1/3 flex flex-col gap-5">
             <div
-              className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg flex items-start gap-4 hover:shadow-xl transition-shadow"
+              className="bg-gray-800/70 backdrop-blur-sm p-6 rounded-xl shadow-lg flex-1 flex items-start gap-4 hover:shadow-xl transition-shadow"
               data-aos="fade-up"
             >
               <FaMapMarkerAlt
@@ -64,9 +67,9 @@ const Contact = () => {
                 </p>
               </div>
             </div>
-  
+
             <div
-              className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg flex items-start gap-4 hover:shadow-xl transition-shadow"
+              className="bg-gray-800/70 backdrop-blur-sm p-6 rounded-xl shadow-lg flex items-start gap-4 hover:shadow-xl transition-shadow"
               data-aos="fade-up"
               data-aos-delay="100"
             >
@@ -78,9 +81,9 @@ const Contact = () => {
                 <p className="text-gray-400">+91 7708463838</p>
               </div>
             </div>
-  
+
             <div
-              className="bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl shadow-lg flex items-start gap-4 hover:shadow-xl transition-shadow"
+              className="bg-gray-800/70 backdrop-blur-sm p-6 rounded-xl shadow-lg flex items-start gap-4 hover:shadow-xl transition-shadow"
               data-aos="fade-up"
               data-aos-delay="200"
             >
@@ -93,9 +96,9 @@ const Contact = () => {
               </div>
             </div>
           </div>
-  
+
           <div
-            className="w-full lg:w-2/3 bg-gray-800/50 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow"
+            className="w-full lg:w-2/3 bg-gray-800/70 backdrop-blur-sm rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow"
             data-aos="fade-down"
           >
             <h2 className="text-3xl font-bold text-gray-300 mb-8 text-center">
@@ -159,14 +162,14 @@ const Contact = () => {
             </form>
           </div>
         </div>
-  
+
         <div
-          className="bg-gray-800/50 backdrop-blur-sm rounded-xl shadow-lg p-8 mx-auto w-full max-w-2xl hover:shadow-xl transition-shadow"
+          className="w-full bg-gray-800/70 backdrop-blur-sm rounded-xl shadow-lg p-8 mx-auto hover:shadow-xl transition-shadow"
           data-aos="zoom-in"
           data-aos-delay="100"
         >
           <h2 className="text-2xl font-bold text-gray-300 mb-6 text-center">
-            Connect With Us
+            Connect Us
           </h2>
           <div className="flex justify-center space-x-6">
             {[
@@ -210,7 +213,7 @@ const Contact = () => {
       </div>
     </div>
   );
-  
+
 };
 
 export default Contact;

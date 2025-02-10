@@ -2,8 +2,8 @@ import React from "react";
 import PrecisionManufacturingIcon from "@mui/icons-material/PrecisionManufacturing";
 function About() {
     return (
-        <div className="flex m-20 p-10 rounded-lg shadow-lg">
-            <div className="relative bg-[#30323a] m-20 p-8 rounded-lg shadow-lg" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="10">
+        <div className="flex m-2 p-20 rounded-lg shadow-lg">
+            <div className="relative bg-gray-800/50 backdrop-blur-sm m-20 p-8 rounded-lg shadow-lg" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="10">
                 {/* Floating MUI Icon (Label Effect) */}
                 <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="10" className="absolute -top-7 -left-7 bg-blue-500 text-white p-6 rounded-full shadow-md">
                     <PrecisionManufacturingIcon fontSize="large" />

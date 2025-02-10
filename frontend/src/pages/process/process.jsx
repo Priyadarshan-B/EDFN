@@ -4,31 +4,31 @@ import { FaLightbulb, FaCogs } from "react-icons/fa";
 
 function Process() {
   return (
-    <div className="container mx-auto py-12 px-6 text-white dark:bg-gray-900 dark:text-white">
+    <div className="container mx-auto text-white dark:bg-gray-900 dark:text-white">
       <h2
-        className="text-4xl font-bold text-center mb-12"
+        className="text-4xl font-bold text-center mb-10"
         data-aos="fade-down"
         data-aos-delay="100"
       >
         OUR PROCESS
       </h2>
 
-      <div className="flex flex-col md:flex-row items-center justify-center gap-12">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-10">
         <div
           className="md:w-1/3 flex justify-center"
           data-aos="fade-right"
           data-aos-delay="200"
         >
-          <div className="w-84 h-84 rounded-full overflow-hidden shadow-lg bg-gray-800/50 backdrop-blur-sm flex items-center justify-center">
+          <div className="rounded-full overflow-hidden shadow-lg bg-gray-800/50 backdrop-blur-sm flex items-center justify-center">
             <img
               src={processGif}
               alt="Process GIF"
-              className="w-full h-full object-cover"
+              className="w-full object-cover"
             />
           </div>
         </div>
 
-        <div className="md:w-1/2 flex flex-col gap-8">
+        <div className="md:w-1/2 flex flex-col gap-4">
           <div
             className="bg-gray-800/50 rounded-lg shadow-md p-8 hover:shadow-xl transition-all transform hover:scale-105 backdrop-blur-md"
             data-aos="fade-up"

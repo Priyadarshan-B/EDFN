@@ -33,8 +33,8 @@ function Home() {
 
 
     return (
-        <div className='h-full items-center flex justify-center flex-col gap-28'>
-            <div className='items-center flex-col justify-center'>
+        <div className='h-full items-center flex justify-center flex-col gap-10'>
+            <div className='items-center flex-col justify-center bg-gray-800/70 backdrop-blur-sm px-20 py-10 rounded-tl-[40px] rounded-br-[40px]' >
                 <div className='text-5xl p-4 font-bold mb-10' style={{ fontFamily: "'Electrolize', sans-serif" }} data-aos="fade-down" data-aos-duration="1000" data-aos-delay="10">
                     Welcome to EDFN Technologies
                 </div>
@@ -54,7 +54,7 @@ function Home() {
             </div>
             <div className='box-border gap-20 py-[30px] px-[20px] w-full mx-[30px] max-w-[90vw] '>
                 <div className='flex gap-2 h-full rounded-lg overflow-hidden'>
-                    <div className="flex-1 bg-[#30323a] py-[20px] px-[20px] items-center flex justify-center gap-5 shadow-md rounded-md" data-aos="fade-up" data-aos-duration="500" data-aos-delay="10">
+                    <div className="flex-1 relative bg-[#30323a] py-[20px] px-[20px] items-center flex justify-center gap-5 shadow-md rounded-md" data-aos="fade-up" data-aos-duration="500" data-aos-delay="10">
                         <div className="bg-blue-500 p-4 rounded-tl-[40px] rounded-br-[40px]">
                             <HomeIcon className="text-white" style={{ fontSize: 30 }} />
                         </div>
