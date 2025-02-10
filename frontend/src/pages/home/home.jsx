@@ -60,10 +60,8 @@ function Home() {
         </div>
       </div>
 
-      {/* Boxes Section */}
       <div className="box-border gap-8 sm:gap-20 py-6 px-4 w-full mx-4 max-w-[90vw]">
         <div className="flex flex-col sm:flex-row gap-4 h-full rounded-lg overflow-hidden">
-          {/* Box 1 */}
           <div
             className="flex-1 relative bg-[#30323a] py-4 sm:py-[20px] px-4 sm:px-[20px] items-center flex flex-col sm:flex-row justify-center gap-3 sm:gap-5 shadow-md rounded-md"
             data-aos="fade-up"
@@ -78,7 +76,6 @@ function Home() {
               <b>ATE domains</b>
             </div>
           </div>
-          {/* Box 2 */}
           <div
             className="flex-1 bg-[#30323a] py-4 sm:py-[20px] px-4 sm:px-[20px] items-center flex flex-col sm:flex-row justify-center gap-3 sm:gap-5 shadow-md rounded-md"
             data-aos="fade-up"
@@ -92,7 +89,6 @@ function Home() {
               End to end service from <b>design</b> to <b>manufacturing</b>
             </div>
           </div>
-          {/* Box 3 */}
           <div
             className="flex-1 bg-[#30323a] py-4 sm:py-[20px] px-4 sm:px-[20px] items-center flex flex-col sm:flex-row justify-center gap-3 sm:gap-5 shadow-md rounded-md"
             data-aos="fade-up"

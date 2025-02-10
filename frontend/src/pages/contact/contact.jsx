@@ -45,7 +45,7 @@ const Contact = () => {
   };
   return (
     <div className=" w-full rounded-lg py-12 px-4 sm:px-6 lg:px-8 text-white">
-      <h2 className="text-3xl font-bold text-center text-gray-100 mb-8" data-aos="zoom-in">
+      <h2 className="text-3xl font-bold text-center text-gray-100 mb-8" data-aos="zoom-in" data-aos-delay="100">
         Contact Us
       </h2>
       <div className="max-w-7xl mx-auto flex flex-col gap-10">
@@ -53,7 +53,7 @@ const Contact = () => {
           <div className="w-full lg:w-1/3 flex flex-col gap-5">
             <div
               className="bg-gray-800/70 backdrop-blur-sm p-6 rounded-xl shadow-lg flex-1 flex items-start gap-4 hover:shadow-xl transition-shadow"
-              data-aos="fade-up"
+              data-aos="fade-down"
             >
               <FaMapMarkerAlt
                 className=" text-2xl mt-1 flex-shrink-0 transition-colors duration-300"
@@ -71,8 +71,8 @@ const Contact = () => {
 
             <div
               className="bg-gray-800/70 backdrop-blur-sm p-6 rounded-xl shadow-lg flex items-start gap-4 hover:shadow-xl transition-shadow"
-              data-aos="fade-up"
-              data-aos-delay="100"
+              data-aos="fade-down"
+              data-aos-delay="200"
             >
               <FaPhoneAlt
                 className=" text-2xl mt-1  flex-shrink-0 transition-colors duration-300"
@@ -85,8 +85,8 @@ const Contact = () => {
 
             <div
               className="bg-gray-800/70 backdrop-blur-sm p-6 rounded-xl shadow-lg flex items-start gap-4 hover:shadow-xl transition-shadow"
-              data-aos="fade-up"
-              data-aos-delay="200"
+              data-aos="fade-down"
+              data-aos-delay="400"
             >
               <FaEnvelope
                 className=" text-2xl mt-1 flex-shrink-0 transition-colors duration-300"

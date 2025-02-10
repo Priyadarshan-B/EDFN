@@ -12,11 +12,11 @@ function Mission() {
 
         <div className="flex flex-col md:flex-row-reverse gap-10 items-center"> 
 
-          <div className="w-full md:w-2/3 flex justify-center" data-aos="fade-up">
+          <div className="w-full  md:w-2/3 flex justify-center" data-aos="fade-up">
             <img
               src={missionGif}
               alt="Mission Animation"
-              className="w-full max-w-sm object-cover rounded-xl shadow-md"
+              className="w-full  object-cover rounded-full shadow-md"
             />
           </div>
 

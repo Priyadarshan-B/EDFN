@@ -16,14 +16,14 @@ function Process() {
       <div className="flex flex-col md:flex-row items-center justify-center gap-10">
         <div
           className="md:w-1/3 flex justify-center"
-          data-aos="fade-right"
-          data-aos-delay="200"
+        //   data-aos="fade-right"
+        //   data-aos-delay="200"
         >
-          <div className="rounded-full overflow-hidden shadow-lg bg-gray-800/50 backdrop-blur-sm flex items-center justify-center">
+          <div className="rounded-full w-full md:w-2/3 flex justify-center" data-aos="zoom-in">
             <img
               src={processGif}
               alt="Process GIF"
-              className="w-full object-cover"
+              className="w-full rounded-full object-cover shadow-md"
             />
           </div>
         </div>
