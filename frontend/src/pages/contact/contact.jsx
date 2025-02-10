@@ -10,6 +10,7 @@ import {
   FaPhone,
   FaEnvelope,
 } from "react-icons/fa";
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 
 const Contact = () => {
   const [loading, setLoading] = useState(false);
@@ -60,7 +61,7 @@ const Contact = () => {
               <div>
                 <h3 className="text-xl font-bold mb-2">Our Office</h3>
                 <p className="text-gray-400">NO. 233 GVG NAGAR </p>
-                <p className="text-gray-400">UDUMALPET COIMBATORE - 642113</p>
+                <p className="text-gray-400">UDUMALPET COIMBATORE - 642113</p><br /><hr />
                 <p className="text-gray-400 pt-1">NO. 153 SIVANANDHAPURAM</p>
                 <p className="text-gray-400">
                   SARAVANAMPATTY COIMBATORE - 641035
@@ -73,7 +74,7 @@ const Contact = () => {
               data-aos="fade-up"
               data-aos-delay="100"
             >
-              <FaPhone
+              <LocalPhoneIcon
                 className="text-blue-500 dark:text-blue-400 hover:text-blue-400 dark:hover:text-blue-300 text-3xl mt-1 flex-shrink-0 transition-colors duration-300"
               />
               <div>
