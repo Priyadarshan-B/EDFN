@@ -29,27 +29,23 @@ function TopNav() {
   };
 
   return (
-    <nav className="fixed w-full top-0 left-0 z-50 shadow-md bg-white/80 backdrop-blur-sm">
+    <nav className="fixed w-full top-0 left-0 z-50 shadow-md bg-[#30323a] backdrop-blur-sm">
       <div className="container mx-auto px-4 py-2 flex justify-between items-center">
-        <div className="border-l-4 border-blue-500 rounded px-2 bg-gradient-to-l from-white to-[#99ccff]">
-          <h3 className="font-bold">EDFN Technologies</h3>
-          <p className="text-sm text-gray-500 font-bold">Innovation in you</p>
+        <div className="border-l-4 border-blue-500 rounded px-2">
+          <h3 className="font-bold" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="10">EDFN Technologies</h3>
+          <p className="text-sm text-gray-500 font-bold" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="10">Innovation in you</p>
         </div>
 
         <div className="hidden md:flex gap-7 items-center">
           {navItems.map((item) => (
             <button
               key={item.id}
-              className={`flex items-center gap-1 px-3 py-1 transition font-bold ${
-                active === item.id
-                  ? "text-bold text-blue-500 inline-block border-b-2 border-blue-500"
-                  : "text-black-600 hover:text-blue-500"
-              }`}
+              className={`flex items-center gap-1 px-3 py-1 transition font-bold ${active === item.id
+                ? "text-bold text-blue-500 inline-block border-b-2 border-blue-500"
+                : "text-black-600 hover:text-blue-500"
+                }`}
               onClick={() => handleScrollToSection(item.id)}
             >
-              <span className={`${active === item.id ? "" : "text-blue-600"}`}>
-                {item.icon}
-              </span>
               {item.label}
             </button>
           ))}
@@ -68,11 +64,10 @@ function TopNav() {
           {navItems.map((item) => (
             <button
               key={item.id}
-              className={`flex items-center gap-3 px-3 py-3 text-sm font-bold ${
-                active === item.id
-                  ? "text-blue-500 bg-blue-50 rounded-lg"
-                  : "text-gray-600 hover:text-blue-500"
-              }`}
+              className={`flex items-center gap-3 px-3 py-3 text-sm font-bold ${active === item.id
+                ? "text-blue-500 bg-blue-50 rounded-lg"
+                : "text-gray-600 hover:text-blue-500"
+                }`}
               onClick={() => handleScrollToSection(item.id)}
             >
               <span className="text-blue-600">{item.icon}</span>
