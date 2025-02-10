@@ -10,7 +10,7 @@ function Process() {
         data-aos="fade-down"
         data-aos-delay="100"
       >
-        OUR PROCESS
+        Our Process
       </h2>
 
       <div className="flex flex-col md:flex-row items-center justify-center gap-10">

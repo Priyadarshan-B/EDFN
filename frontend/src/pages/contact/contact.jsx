@@ -145,7 +145,7 @@ const Contact = () => {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="bg-gray-600 text-white px-8 py-3 rounded-lg hover:bg-gray-700 transition-colors duration-300 disabled:bg-gray-400 disabled:cursor-not-allowed font-medium text-sm"
+                  className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition-colors duration-300 disabled:bg-blue-400 disabled:cursor-not-allowed font-medium text-sm float-right"
                 >
                   {loading ? (
                     <span className="flex items-center justify-center">
