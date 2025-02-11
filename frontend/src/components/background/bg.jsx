@@ -17,7 +17,7 @@ const Background = () => {
     let particles = [];
 
     const clearCanvas = () => {
-      ctx.fillStyle = "rgba(0,0,0,0.07)";
+      ctx.fillStyle = "rgba(0,0,0,0.10)";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
     };
 
@@ -47,7 +47,7 @@ const Background = () => {
       };
     }
 
-    const speed = 5;
+    const speed = 4;
     const period = 1000; 
 
     const pulse = () => {

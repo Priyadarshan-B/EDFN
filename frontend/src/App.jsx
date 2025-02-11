@@ -15,10 +15,12 @@ function App() {
     <div className='text-black'>
       {/* <div class="loader"></div> */}
       <Background/>
-      <TopNav />
+      <div>
+        <TopNav />
+      </div>
       <div
             id="home"
-            className="section pt-32  flex items-center justify-center"
+            className="section  flex items-center  justify-center"
           >
             <Home />
           </div>
@@ -30,13 +32,13 @@ function App() {
           </div>
            <div
             id="services"
-            className="section flex items-center justify-center "
+            className=" section flex items-center justify-center  "
           >
             <Services />
           </div> 
           <div
             id="process"
-            className="section flex items-center justify-center "
+            className="section  flex items-center justify-center"
           >
             <Process />
           </div>

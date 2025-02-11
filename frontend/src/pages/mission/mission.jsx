@@ -1,22 +1,29 @@
 import React from "react";
 import missionGif from '../../assets/mission.gif';
+import bg3 from '../../assets/bg3.jpg';
 
 function Mission() {
   return (
-    <div className="h-full w-full rounded-lg text-gray-300 py-12 px-4 sm:px-6 lg:px-8 flex justify-center items-center">
-      <div className="max-w-7xl w-full">
+    <div
+      className="relative h-full w-full rounded-lg text-gray-300 py-12 px-4 sm:px-6 lg:px-8 flex justify-center items-center"
+    >
+      <div 
+        className="absolute inset-0 bg-cover bg-center opacity-90" 
+        style={{ backgroundImage: `url(${bg3})` }} 
+      />
+      <div className="absolute inset-0 bg-black/60"></div>
 
+      <div className="relative max-w-7xl w-full">
         <h2 className="text-3xl font-bold text-center text-gray-100 mb-8" data-aos="zoom-in">
           Innovation-Driven Future
         </h2>
 
         <div className="flex flex-col md:flex-row-reverse gap-10 items-center"> 
-
-          <div className="w-full  md:w-2/3 flex justify-center" data-aos="fade-up">
+          <div className="w-full md:w-2/3 flex justify-center" data-aos="fade-up">
             <img
               src={missionGif}
               alt="Mission Animation"
-              className="w-full  object-cover rounded-full shadow-md"
+              className="w-full object-cover rounded-full shadow-md"
             />
           </div>
 
