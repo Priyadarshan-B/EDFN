@@ -50,7 +50,7 @@ function App() {
           </div>
           <div
             id="contact"
-            className="section"
+            className="section flex items-center justify-center"
           >
             <Contact />
           </div>
