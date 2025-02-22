@@ -1,12 +1,10 @@
 import React from "react";
 import PrecisionManufacturingIcon from "@mui/icons-material/PrecisionManufacturing";
 import bg5 from '../../assets/bg5.jpg';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function About() {
   return (
     <div className="relative flex flex-col md:flex-row m-2 p-4 md:p-20 rounded-lg shadow-lg">
-      {/* Background Image with Low Opacity */}
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-90 "
         style={{ backgroundImage: `url(${bg5})` }}
