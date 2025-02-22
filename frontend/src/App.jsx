@@ -9,7 +9,7 @@ import Process from './pages/process/process';
 import Services from './pages/services/services';
 import '../src/components/loader/loader.css'
 import Background from './components/background/bg';
-import JoinUs from './pages/joinUs/joinUs';
+import JoinUs from './pages/joinus/joinus';
 
 function App() {
   const [loading, setLoading] = useState(true);

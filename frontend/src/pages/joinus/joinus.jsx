@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import missionGif from '../../assets/mission.gif';
+// import missionGif from '../../assets/mission.gif';
 import bg5 from '../../assets/bg5.jpg';
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
