@@ -1,6 +1,7 @@
 import React from "react";
 import PrecisionManufacturingIcon from "@mui/icons-material/PrecisionManufacturing";
 import bg5 from '../../assets/bg5.jpg';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 function About() {
   return (
