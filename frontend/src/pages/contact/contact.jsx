@@ -60,9 +60,10 @@ const Contact = () => {
       >
         Contact Us
       </h2>
-  
+      <hr />
+      <br />
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-5">
-        
+
         <div className="w-full lg:w-1/3 flex flex-col gap-2" data-aos="fade-down">
           <div className="flex gap-4 backdrop-blur-sm p-2 rounded-md shadow-sm hover:shadow-lg transition-shadow">
             <FaMapMarkerAlt className="text-2xl mt-1 flex-shrink-0" />
@@ -76,7 +77,7 @@ const Contact = () => {
               <p className="text-gray-400">SARAVANAMPATTY COIMBATORE - 641035</p>
             </div>
           </div>
-  
+
           <div
             className="flex gap-4 backdrop-blur-sm p-2 rounded-xl shadow-sm hover:shadow-lg transition-shadow"
             data-aos="fade-down"
@@ -90,7 +91,7 @@ const Contact = () => {
               </a>
             </div>
           </div>
-  
+
           <div
             className="flex gap-4 backdrop-blur-sm p-2 rounded-xl shadow-sm hover:shadow-lg transition-shadow"
             data-aos="fade-down"
@@ -108,74 +109,9 @@ const Contact = () => {
             </div>
           </div>
         </div>
-  
-        <div
-          className="w-full lg:w-1/3 backdrop-blur-sm rounded-sm shadow-sm p-2  transition-shadow"
-          data-aos="fade-down"
-        >
-          <h2 className="text-2xl font-semibold text-gray-300 mb-8 text-center">
-            Send Us a Message
-          </h2>
-          <form onSubmit={sendEmail} className="grid grid-cols-1 gap-3">
-            <div>
-              <label className="block text-gray-400 text-sm font-medium mb-1">
-                Full Name
-              </label>
-              <input
-                type="text"
-                name="name"
-                required
-                className="w-full px-1 py-1 border border-gray-700 rounded-md bg-gray-700 text-white 
-                           focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-              />
-            </div>
-            <div>
-              <label className="block text-gray-400 text-sm font-medium mb-1">
-                Email
-              </label>
-              <input
-                type="email"
-                name="email"
-                required
-                className="w-full px-1 py-1 border border-gray-700 rounded-md bg-gray-700 text-white 
-                           focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-              />
-            </div>
-            <div>
-              <label className="block text-gray-400 text-sm font-medium mb-1">
-                Message
-              </label>
-              <textarea
-                name="message"
-                required
-                rows="5"
-                className="w-full px-1 py-1 border border-gray-700 rounded-md bg-gray-700 text-white 
-                           focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-none"
-              ></textarea>
-            </div>
-            <div className="flex justify-center">
-              <button
-                type="submit"
-                disabled={loading}
-                className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 
-                           transition-colors duration-300 disabled:bg-blue-400 disabled:cursor-not-allowed font-medium text-sm"
-              >
-                {loading ? (
-                  <span className="flex items-center justify-center">
-                    <svg
-                      className="animate-spin h-5 w-5 mr-3"
-                      viewBox="0 0 24 24"
-                    ></svg>
-                    Sending...
-                  </span>
-                ) : (
-                  "Send Message"
-                )}
-              </button>
-            </div>
-          </form>
-        </div>
-  
+
+
+
         <div
           className="w-full lg:w-1/3 flex flex-col items-center justify-center backdrop-blur-sm 
                      rounded-xl  p-4  transition-shadow"
@@ -191,7 +127,7 @@ const Contact = () => {
                 { icon: <FaInstagram />, color: "pink-600", link: "https://instagram.com" },
               ].map((social, index) => (
                 <a
-  
+
                   key={index}
                   href={social.link}
                   target="_blank"
@@ -203,20 +139,24 @@ const Contact = () => {
                   {React.cloneElement(social.icon, { className: "text-3xl" })}
                 </a>
               ))}
-            
+
             </div>
-            <div className=" flex flex-col gap-2">
-                <button className="hover:text-purple-300" onClick={()=> handleScrollToSection("home")}>Home</button>
-                <button className="hover:text-purple-300" onClick={()=> handleScrollToSection("about")}>About</button>
-                <button className="hover:text-purple-300" onClick={()=> handleScrollToSection("services")}>Services</button>
-                <button className="hover:text-purple-300" onClick={()=> handleScrollToSection("process")}>Process</button>
-              </div>
+
           </div>
+
+        </div>
+        <div className=" flex flex-1 flex-col gap-2 justify-center items-center">
+          <button className="hover:text-purple-300" onClick={() => handleScrollToSection("home")}>Home</button>
+          <button className="hover:text-purple-300" onClick={() => handleScrollToSection("about")}>About</button>
+          <button className="hover:text-purple-300" onClick={() => handleScrollToSection("services")}>Services</button>
+          <button className="hover:text-purple-300" onClick={() => handleScrollToSection("process")}>Process</button>
         </div>
       </div>
+      <br />
+      <br />
     </div>
   );
-    
+
 
 };
 
