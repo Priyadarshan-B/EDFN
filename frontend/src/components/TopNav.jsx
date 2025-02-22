@@ -15,8 +15,10 @@ function TopNav() {
     { id: "home", label: "HOME", icon: <HouseTwoToneIcon /> },
     { id: "about", label: "ABOUT US", icon: <InfoTwoToneIcon /> },
     { id: "services", label: "SERVICES", icon: <SupportAgentTwoToneIcon /> },
-    { id: "process", label: "JOIN US", icon: <JoinFullTwoToneIcon /> },
+    { id: "process", label: "PROCESS", icon: <JoinFullTwoToneIcon /> },
+    { id: "joinus", label: "JOIN US", icon: <PermContactCalendarTwoToneIcon /> },
     { id: "contact", label: "CONTACT", icon: <PermContactCalendarTwoToneIcon /> },
+    
   ];
 
   const handleScrollToSection = (sectionId) => {
