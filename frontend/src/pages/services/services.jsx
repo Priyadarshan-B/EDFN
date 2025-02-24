@@ -89,7 +89,7 @@ function Services() {
       <img
         src={bg2}
         alt="Background"
-        className="absolute inset-0 w-full h-full object-cover opacity-100"
+        className="absolute inset-0 w-full h-full object-cover opacity-100 rounded-lg"
       />
 <div className="absolute inset-0 bg-black/50"></div>
 

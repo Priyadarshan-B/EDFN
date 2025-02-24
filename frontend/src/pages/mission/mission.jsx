@@ -8,7 +8,7 @@ function Mission() {
       className="relative h-full w-full rounded-lg text-gray-300 py-12 px-4 sm:px-6 lg:px-8 flex justify-center items-center"
     >
       <div 
-        className="absolute inset-0 bg-cover bg-center opacity-90" 
+        className="absolute inset-0 bg-cover bg-center opacity-90 rounded-lg" 
         style={{ backgroundImage: `url(${bg3})` }} 
       />
       <div className="absolute inset-0 bg-black/60"></div>

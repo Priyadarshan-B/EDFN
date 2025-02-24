@@ -7,7 +7,7 @@ function Process() {
   return (
     <div className="relative pt-10 pb-10  container mx-auto text-white dark:bg-gray-900 dark:text-white">
       <div 
-        className="absolute inset-0 bg-cover bg-center opacity-90"
+        className="absolute inset-0 bg-cover bg-center opacity-90 rounded-lg"
         style={{ backgroundImage: `url(${bg4})` }}
       />
   <div className="absolute inset-0 bg-black/40"></div>

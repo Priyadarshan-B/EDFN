@@ -6,7 +6,7 @@ function About() {
   return (
     <div className="relative flex flex-col md:flex-row m-2 p-4 md:p-20 rounded-lg shadow-lg">
       <div 
-        className="absolute inset-0 bg-cover bg-center opacity-90 "
+        className="absolute inset-0 bg-cover bg-center opacity-90 rounded-lg"
         style={{ backgroundImage: `url(${bg5})` }}
       />
       <div className="absolute inset-0 bg-black/70"></div>
@@ -14,7 +14,7 @@ function About() {
 
       <div className="relative backdrop-blur-sm m-0 md:m-20 p-4 md:p-8 rounded-lg shadow-lg w-full md:w-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="10">
         
-        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="10" className="absolute -top-7 -left-7 bg-blue-500 text-white p-6 rounded-full shadow-md">
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="10" className="absolute -top-7 -left-6 bg-blue-500 text-white p-4 rounded-full shadow-md">
           <PrecisionManufacturingIcon fontSize="large" />
         </div>
 

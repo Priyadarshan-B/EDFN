@@ -50,7 +50,7 @@ function JoinUs() {
     return (
         <div className="relative flex flex-col md:flex-row m-2 p-4 md:p-20 rounded-lg shadow-lg w-full">
             <div
-                className="absolute inset-0 bg-cover bg-center opacity-90 w-full"
+                className="absolute inset-0 bg-cover bg-center opacity-90 w-full rounded-lg"
                 style={{ backgroundImage: `url(${bg5})` }}
             />
             <div className="absolute inset-0 bg-black/70 w-full"></div>

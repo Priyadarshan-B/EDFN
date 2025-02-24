@@ -57,7 +57,7 @@ function Home() {
       <img
         src={bg1}
         alt="Background"
-        className="absolute inset-0 w-full h-full object-cover opacity-90"
+        className="absolute inset-0 w-full h-full object-cover opacity-90 rounded-md"
       />
 
 <div className="absolute inset-0 bg-black/40"></div>
@@ -72,7 +72,7 @@ function Home() {
             className="text-4xl sm:text-5xl p-2 font-bold mb-5"
             style={{ fontFamily: "'Electrolize', sans-serif" }}
           >
-            Welcome to EDFN Technologies
+            <center>Welcome to EDFN Technologies</center>
           </div>
           <div className="flex flex-col items-center justify-center text-base sm:text-3xl">
             <span data-aos="fade-left" data-aos-duration="1000" data-aos-delay="10">
