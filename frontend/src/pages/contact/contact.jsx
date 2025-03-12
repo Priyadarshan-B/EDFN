@@ -145,7 +145,7 @@ const Contact = () => {
           </div>
 
         </div>
-        <div className=" flex flex-1 flex-col gap-2 justify-center items-center">
+        <div className=" flex flex-1 flex-col gap-5 justify-center items-center">
           <button className="hover:text-purple-300" onClick={() => handleScrollToSection("home")}>Home</button>
           <button className="hover:text-purple-300" onClick={() => handleScrollToSection("about")}>About</button>
           <button className="hover:text-purple-300" onClick={() => handleScrollToSection("services")}>Services</button>

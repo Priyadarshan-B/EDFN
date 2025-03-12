@@ -5,6 +5,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import PeopleIcon from "@mui/icons-material/People";
 import { motion } from "framer-motion";
 import bg1 from "../../assets/bg1.jpg";
+import { Helmet } from "react-helmet-async";
 
 const works = [
   "PCB Design",
@@ -53,6 +54,26 @@ function Home() {
   }, []);
 
   return (
+    <>
+    <Helmet>
+        <title>EDFN Technologies | Expert PCB Development</title>
+        <meta name="description" content="EDFN Technologies specializes in high-quality PCB design, fabrication, and assembly services. Trusted by engineers and industries worldwide." />
+        <meta name="keywords" content="PCB development, PCB fabrication, circuit board design, electronic manufacturing, EDFN Technologies" />
+        <meta name="author" content="EDFN Technologies" />
+
+        <meta property="og:title" content="EDFN Technologies - Expert PCB Development" />
+        <meta property="og:description" content="Leading PCB development company offering top-tier circuit board solutions. Explore our services today!" />
+        <meta property="og:image" content="https://www.edfntechnologies.com/og-image.jpg" />
+        <meta property="og:url" content="https://www.edfntechnologies.com/" />
+        <meta property="og:type" content="website" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="EDFN Technologies - PCB Solutions" />
+        <meta name="twitter:description" content="Your trusted partner in PCB fabrication, design, and assembly." />
+        <meta name="twitter:image" content="https://www.edfntechnologies.com/twitter-image.jpg" />
+
+        <link rel="canonical" href="https://www.edfntechnologies.com/" />
+      </Helmet>
     <div className="relative min-h-screen w-full">
       <img
         src={bg1}
@@ -60,7 +81,7 @@ function Home() {
         className="absolute inset-0 w-full h-full object-cover opacity-90 rounded-md"
       />
 
-<div className="absolute inset-0 bg-black/40"></div>
+      <div className="absolute inset-0 bg-black/40"></div>
       <div className="relative z-10 h-full flex flex-col items-center justify-center gap-20">
         <div
           className="flex flex-col items-center  m-3 mt-32 justify-center bg-gray-800/70 backdrop-blur-sm px-8 sm:px-20 py-5 rounded-lg"
@@ -75,7 +96,11 @@ function Home() {
             <center>Welcome to EDFN Technologies</center>
           </div>
           <div className="flex flex-col items-center justify-center text-base sm:text-3xl">
-            <span data-aos="fade-left" data-aos-duration="1000" data-aos-delay="10">
+            <span
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="10"
+            >
               We create&nbsp;
             </span>
             <motion.span
@@ -90,7 +115,7 @@ function Home() {
             </motion.span>
           </div>
         </div>
-
+        
         <div className="box-border gap-8 sm:gap-20 py-6 px-4 w-full mx-4 max-w-[90vw]">
           <div className="flex flex-col sm:flex-row gap-4 h-full rounded-lg overflow-hidden">
             {featureBoxes.map((box, i) => (
@@ -101,7 +126,9 @@ function Home() {
                 data-aos-duration={`${500 + i * 500}`}
                 data-aos-delay="10"
               >
-                <div className={`${box.bgColor} p-4 rounded-[40px] rounded-br-[40px]`}>
+                <div
+                  className={`${box.bgColor} p-4 rounded-[40px] rounded-br-[40px]`}
+                >
                   {box.icon}
                 </div>
                 <div dangerouslySetInnerHTML={{ __html: box.text }} />
@@ -111,6 +138,7 @@ function Home() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
