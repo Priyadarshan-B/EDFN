@@ -4,6 +4,7 @@
   import SupportAgentTwoToneIcon from '@mui/icons-material/SupportAgentTwoTone';
   import JoinFullTwoToneIcon from '@mui/icons-material/JoinFullTwoTone';
   import PermContactCalendarTwoToneIcon from '@mui/icons-material/PermContactCalendarTwoTone';
+  import HubTwoToneIcon from '@mui/icons-material/HubTwoTone';
   import MenuIcon from '@mui/icons-material/Menu';
   import CloseIcon from '@mui/icons-material/Close';
 
@@ -16,7 +17,7 @@
       { id: "about", label: "ABOUT US", icon: <InfoTwoToneIcon /> },
       { id: "services", label: "SERVICES", icon: <SupportAgentTwoToneIcon /> },
       { id: "process", label: "PROCESS", icon: <JoinFullTwoToneIcon /> },
-      { id: "joinus", label: "JOIN US", icon: <PermContactCalendarTwoToneIcon /> },
+      { id: "joinus", label: "JOIN US", icon: <HubTwoToneIcon /> },
       { id: "contact", label: "CONTACT", icon: <PermContactCalendarTwoToneIcon /> },
     ];
 

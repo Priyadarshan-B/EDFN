@@ -1,5 +1,5 @@
 import React from "react";
-import missionGif from '../../assets/mission.gif';
+import missionGif from '../../assets/mission.svg';
 import bg3 from '../../assets/bg3.jpg';
 
 function Mission() {
@@ -23,7 +23,7 @@ function Mission() {
             <img
               src={missionGif}
               alt="Mission Animation"
-              className="w-full object-cover rounded-full shadow-md"
+              className="w-full object-cover  shadow-md"
             />
           </div>
 
